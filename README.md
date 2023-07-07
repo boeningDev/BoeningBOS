@@ -10,3 +10,4 @@ Uses legacy GRUB stage2_eltorito
 
 Working commands:
 
+-println(string, line) - Prints a string on the specified line (or currLine)
