@@ -33,8 +33,8 @@ void clearScreen(void) {
 }
 
 void clearLine(unsigned int line) {
-	j = line*160;
-	while(j < 80 * 2) {
+	j = (line*160);
+	while(j < 160) {
 		vidptr[j] = ' ';
 		vidptr[j+1] = 0x07;
 		j = j + 2;
