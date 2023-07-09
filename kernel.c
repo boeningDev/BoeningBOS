@@ -66,7 +66,6 @@ void kmain(void) {
 	println("Hello World!", currLine);
 	println("This is my OS, BoeningBOS", currLine);
 	println("You should not see this line", currLine);
-	clearLine(2);
-	inputStr();
+//	clearLine(2);
 	return;
 }
