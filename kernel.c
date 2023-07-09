@@ -71,4 +71,5 @@ void kmain(void) {
 	println("You should not see this line", currLine);
 	clearLine(2);
 	inputStr();
+	return;
 }
