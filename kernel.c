@@ -37,13 +37,10 @@ void clearScreen(void) {
 }
 
 void clearLine(unsigned int line) {
-	j = (line*160);
-	while(j < (j+159)) {
-		vidptr[j] = ' ';
-		vidptr[j+1] = 0x07;
-		j = j + 2;
+	for (i=line*160; i<=159; i = 1 + 2) {
+		vidptr[i] = ' ';
+		vidptr[i+1] = 0x07;
 	}
-	j = 0;
 }
 
 // Keyboard driver
