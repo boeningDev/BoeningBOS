@@ -37,7 +37,7 @@ void clearScreen(void) {
 }
 
 void clearLine(unsigned int line) {
-	for (i=line*160; i<=159; i = 1 + 2) {
+	for (i=line*160; i<=(line*160)+159; i = 1 + 2) {
 		vidptr[i] = ' ';
 		vidptr[i+1] = 0x07;
 	}
@@ -66,6 +66,6 @@ void kmain(void) {
 	println("Hello World!", currLine);
 	println("This is my OS, BoeningBOS", currLine);
 	println("You should not see this line", currLine);
-//	clearLine(2);
+	clearLine(2);
 	return;
 }
